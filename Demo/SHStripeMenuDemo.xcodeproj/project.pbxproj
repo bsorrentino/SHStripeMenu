@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F8BB2A31A34BA760076140E /* Chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8BB2901A34BA760076140E /* Chat.png */; };
+		5F8BB2A41A34BA760076140E /* Graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8BB2911A34BA760076140E /* Graph.png */; };
+		5F8BB2A51A34BA760076140E /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8BB2921A34BA760076140E /* Home.png */; };
+		5F8BB2A61A34BA760076140E /* Mail-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8BB2931A34BA760076140E /* Mail-2.png */; };
+		5F8BB2A71A34BA760076140E /* Stat.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8BB2941A34BA760076140E /* Stat.png */; };
+		5F8BB2A81A34BA760076140E /* menu_info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F8BB2951A34BA760076140E /* menu_info.plist */; };
+		5F8BB2A91A34BA760076140E /* SHLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8BB2971A34BA760076140E /* SHLineView.m */; };
+		5F8BB2AA1A34BA760076140E /* SHMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8BB2981A34BA760076140E /* SHMenuCell.xib */; };
+		5F8BB2AB1A34BA760076140E /* SHMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8BB29A1A34BA760076140E /* SHMenuItem.m */; };
+		5F8BB2AC1A34BA760076140E /* SHStripeMenuExecuter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8BB29D1A34BA760076140E /* SHStripeMenuExecuter.m */; };
+		5F8BB2AD1A34BA760076140E /* SHStripeMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8BB29F1A34BA760076140E /* SHStripeMenuViewController.m */; };
+		5F8BB2AE1A34BA760076140E /* SHStripeMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8BB2A01A34BA760076140E /* SHStripeMenuViewController.xib */; };
+		5F8BB2AF1A34BA760076140E /* UIApplication+AppDimensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8BB2A21A34BA760076140E /* UIApplication+AppDimensions.m */; };
 		A0B4BB46173B7798003A6881 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B4BB45173B7798003A6881 /* UIKit.framework */; };
 		A0B4BB48173B7798003A6881 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B4BB47173B7798003A6881 /* Foundation.framework */; };
 		A0B4BB4A173B7798003A6881 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B4BB49173B7798003A6881 /* CoreGraphics.framework */; };
@@ -18,27 +31,33 @@
 		A0B4BB5C173B7798003A6881 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B4BB5B173B7798003A6881 /* Default-568h@2x.png */; };
 		A0B4BB5F173B7798003A6881 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B4BB5E173B7798003A6881 /* RootViewController.m */; };
 		A0B4BB62173B7798003A6881 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B4BB60173B7798003A6881 /* RootViewController.xib */; };
-		A0B4BB7B173B782B003A6881 /* Chat.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B4BB6A173B782B003A6881 /* Chat.png */; };
-		A0B4BB7C173B782B003A6881 /* Graph.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B4BB6B173B782B003A6881 /* Graph.png */; };
-		A0B4BB7D173B782B003A6881 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B4BB6C173B782B003A6881 /* Home.png */; };
-		A0B4BB7E173B782B003A6881 /* Mail-2.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B4BB6D173B782B003A6881 /* Mail-2.png */; };
-		A0B4BB7F173B782B003A6881 /* Stat.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B4BB6E173B782B003A6881 /* Stat.png */; };
-		A0B4BB80173B782B003A6881 /* menu_info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0B4BB6F173B782B003A6881 /* menu_info.plist */; };
-		A0B4BB81173B782B003A6881 /* SHLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B4BB71173B782B003A6881 /* SHLineView.m */; };
-		A0B4BB82173B782B003A6881 /* SHMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B4BB72173B782B003A6881 /* SHMenuCell.xib */; };
-		A0B4BB83173B782B003A6881 /* SHMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B4BB74173B782B003A6881 /* SHMenuItem.m */; };
-		A0B4BB84173B782B003A6881 /* SHStripeMenuExecuter.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B4BB77173B782B003A6881 /* SHStripeMenuExecuter.m */; };
-		A0B4BB85173B782B003A6881 /* SHStripeMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B4BB79173B782B003A6881 /* SHStripeMenuViewController.m */; };
-		A0B4BB86173B782B003A6881 /* SHStripeMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B4BB7A173B782B003A6881 /* SHStripeMenuViewController.xib */; };
 		A0B4BB89173B7A4D003A6881 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B4BB87173B7A3A003A6881 /* QuartzCore.framework */; };
 		A0B7059C1744CB510062C19A /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B7059A1744CB510062C19A /* NewsViewController.m */; };
 		A0B7059D1744CB510062C19A /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B7059B1744CB510062C19A /* NewsViewController.xib */; };
 		A0B705A11744CF9F0062C19A /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B7059F1744CF9F0062C19A /* SocialViewController.m */; };
 		A0B705A21744CF9F0062C19A /* SocialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B705A01744CF9F0062C19A /* SocialViewController.xib */; };
-		A0E2D687173BAB67001DD98C /* UIApplication+AppDimensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E2D686173BAB67001DD98C /* UIApplication+AppDimensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F8BB2901A34BA760076140E /* Chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chat.png; sourceTree = "<group>"; };
+		5F8BB2911A34BA760076140E /* Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Graph.png; sourceTree = "<group>"; };
+		5F8BB2921A34BA760076140E /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		5F8BB2931A34BA760076140E /* Mail-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mail-2.png"; sourceTree = "<group>"; };
+		5F8BB2941A34BA760076140E /* Stat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stat.png; sourceTree = "<group>"; };
+		5F8BB2951A34BA760076140E /* menu_info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = menu_info.plist; sourceTree = "<group>"; };
+		5F8BB2961A34BA760076140E /* SHLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLineView.h; sourceTree = "<group>"; };
+		5F8BB2971A34BA760076140E /* SHLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLineView.m; sourceTree = "<group>"; };
+		5F8BB2981A34BA760076140E /* SHMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHMenuCell.xib; sourceTree = "<group>"; };
+		5F8BB2991A34BA760076140E /* SHMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHMenuItem.h; sourceTree = "<group>"; };
+		5F8BB29A1A34BA760076140E /* SHMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHMenuItem.m; sourceTree = "<group>"; };
+		5F8BB29B1A34BA760076140E /* SHStripeMenuActionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHStripeMenuActionDelegate.h; sourceTree = "<group>"; };
+		5F8BB29C1A34BA760076140E /* SHStripeMenuExecuter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHStripeMenuExecuter.h; sourceTree = "<group>"; };
+		5F8BB29D1A34BA760076140E /* SHStripeMenuExecuter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHStripeMenuExecuter.m; sourceTree = "<group>"; };
+		5F8BB29E1A34BA760076140E /* SHStripeMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHStripeMenuViewController.h; sourceTree = "<group>"; };
+		5F8BB29F1A34BA760076140E /* SHStripeMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHStripeMenuViewController.m; sourceTree = "<group>"; };
+		5F8BB2A01A34BA760076140E /* SHStripeMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHStripeMenuViewController.xib; sourceTree = "<group>"; };
+		5F8BB2A11A34BA760076140E /* UIApplication+AppDimensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+AppDimensions.h"; sourceTree = "<group>"; };
+		5F8BB2A21A34BA760076140E /* UIApplication+AppDimensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+AppDimensions.m"; sourceTree = "<group>"; };
 		A0B4BB42173B7798003A6881 /* SHStripeMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHStripeMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B4BB45173B7798003A6881 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A0B4BB47173B7798003A6881 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,23 +74,6 @@
 		A0B4BB5D173B7798003A6881 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		A0B4BB5E173B7798003A6881 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		A0B4BB61173B7798003A6881 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
-		A0B4BB6A173B782B003A6881 /* Chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chat.png; sourceTree = "<group>"; };
-		A0B4BB6B173B782B003A6881 /* Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Graph.png; sourceTree = "<group>"; };
-		A0B4BB6C173B782B003A6881 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
-		A0B4BB6D173B782B003A6881 /* Mail-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mail-2.png"; sourceTree = "<group>"; };
-		A0B4BB6E173B782B003A6881 /* Stat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stat.png; sourceTree = "<group>"; };
-		A0B4BB6F173B782B003A6881 /* menu_info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = menu_info.plist; sourceTree = "<group>"; };
-		A0B4BB70173B782B003A6881 /* SHLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLineView.h; sourceTree = "<group>"; };
-		A0B4BB71173B782B003A6881 /* SHLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLineView.m; sourceTree = "<group>"; };
-		A0B4BB72173B782B003A6881 /* SHMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHMenuCell.xib; sourceTree = "<group>"; };
-		A0B4BB73173B782B003A6881 /* SHMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHMenuItem.h; sourceTree = "<group>"; };
-		A0B4BB74173B782B003A6881 /* SHMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHMenuItem.m; sourceTree = "<group>"; };
-		A0B4BB75173B782B003A6881 /* SHStripeMenuActionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHStripeMenuActionDelegate.h; sourceTree = "<group>"; };
-		A0B4BB76173B782B003A6881 /* SHStripeMenuExecuter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHStripeMenuExecuter.h; sourceTree = "<group>"; };
-		A0B4BB77173B782B003A6881 /* SHStripeMenuExecuter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHStripeMenuExecuter.m; sourceTree = "<group>"; };
-		A0B4BB78173B782B003A6881 /* SHStripeMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHStripeMenuViewController.h; sourceTree = "<group>"; };
-		A0B4BB79173B782B003A6881 /* SHStripeMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHStripeMenuViewController.m; sourceTree = "<group>"; };
-		A0B4BB7A173B782B003A6881 /* SHStripeMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHStripeMenuViewController.xib; sourceTree = "<group>"; };
 		A0B4BB87173B7A3A003A6881 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A0B705991744CB500062C19A /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		A0B7059A1744CB510062C19A /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
@@ -79,8 +81,6 @@
 		A0B7059E1744CF9E0062C19A /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
 		A0B7059F1744CF9F0062C19A /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
 		A0B705A01744CF9F0062C19A /* SocialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialViewController.xib; sourceTree = "<group>"; };
-		A0E2D685173BAB67001DD98C /* UIApplication+AppDimensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+AppDimensions.h"; sourceTree = "<group>"; };
-		A0E2D686173BAB67001DD98C /* UIApplication+AppDimensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+AppDimensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +98,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F8BB28E1A34BA760076140E /* SHStripeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				5F8BB28F1A34BA760076140E /* Icons */,
+				5F8BB2951A34BA760076140E /* menu_info.plist */,
+				5F8BB2961A34BA760076140E /* SHLineView.h */,
+				5F8BB2971A34BA760076140E /* SHLineView.m */,
+				5F8BB2981A34BA760076140E /* SHMenuCell.xib */,
+				5F8BB2991A34BA760076140E /* SHMenuItem.h */,
+				5F8BB29A1A34BA760076140E /* SHMenuItem.m */,
+				5F8BB29B1A34BA760076140E /* SHStripeMenuActionDelegate.h */,
+				5F8BB29C1A34BA760076140E /* SHStripeMenuExecuter.h */,
+				5F8BB29D1A34BA760076140E /* SHStripeMenuExecuter.m */,
+				5F8BB29E1A34BA760076140E /* SHStripeMenuViewController.h */,
+				5F8BB29F1A34BA760076140E /* SHStripeMenuViewController.m */,
+				5F8BB2A01A34BA760076140E /* SHStripeMenuViewController.xib */,
+				5F8BB2A11A34BA760076140E /* UIApplication+AppDimensions.h */,
+				5F8BB2A21A34BA760076140E /* UIApplication+AppDimensions.m */,
+			);
+			name = SHStripeMenu;
+			path = ../../SHStripeMenu;
+			sourceTree = "<group>";
+		};
+		5F8BB28F1A34BA760076140E /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				5F8BB2901A34BA760076140E /* Chat.png */,
+				5F8BB2911A34BA760076140E /* Graph.png */,
+				5F8BB2921A34BA760076140E /* Home.png */,
+				5F8BB2931A34BA760076140E /* Mail-2.png */,
+				5F8BB2941A34BA760076140E /* Stat.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		A0B4BB39173B7797003A6881 = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +164,7 @@
 		A0B4BB4B173B7798003A6881 /* SHStripeMenuDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A0B4BB68173B782B003A6881 /* SHStripeMenu */,
+				5F8BB28E1A34BA760076140E /* SHStripeMenu */,
 				A0B4BB54173B7798003A6881 /* AppDelegate.h */,
 				A0B4BB55173B7798003A6881 /* AppDelegate.m */,
 				A0B705991744CB500062C19A /* NewsViewController.h */,
@@ -158,40 +193,6 @@
 				A0B4BB5B173B7798003A6881 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A0B4BB68173B782B003A6881 /* SHStripeMenu */ = {
-			isa = PBXGroup;
-			children = (
-				A0B4BB69173B782B003A6881 /* Icons */,
-				A0B4BB6F173B782B003A6881 /* menu_info.plist */,
-				A0B4BB70173B782B003A6881 /* SHLineView.h */,
-				A0B4BB71173B782B003A6881 /* SHLineView.m */,
-				A0B4BB72173B782B003A6881 /* SHMenuCell.xib */,
-				A0B4BB73173B782B003A6881 /* SHMenuItem.h */,
-				A0B4BB74173B782B003A6881 /* SHMenuItem.m */,
-				A0B4BB75173B782B003A6881 /* SHStripeMenuActionDelegate.h */,
-				A0B4BB76173B782B003A6881 /* SHStripeMenuExecuter.h */,
-				A0B4BB77173B782B003A6881 /* SHStripeMenuExecuter.m */,
-				A0B4BB78173B782B003A6881 /* SHStripeMenuViewController.h */,
-				A0B4BB79173B782B003A6881 /* SHStripeMenuViewController.m */,
-				A0B4BB7A173B782B003A6881 /* SHStripeMenuViewController.xib */,
-				A0E2D685173BAB67001DD98C /* UIApplication+AppDimensions.h */,
-				A0E2D686173BAB67001DD98C /* UIApplication+AppDimensions.m */,
-			);
-			path = SHStripeMenu;
-			sourceTree = "<group>";
-		};
-		A0B4BB69173B782B003A6881 /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				A0B4BB6A173B782B003A6881 /* Chat.png */,
-				A0B4BB6B173B782B003A6881 /* Graph.png */,
-				A0B4BB6C173B782B003A6881 /* Home.png */,
-				A0B4BB6D173B782B003A6881 /* Mail-2.png */,
-				A0B4BB6E173B782B003A6881 /* Stat.png */,
-			);
-			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,20 +247,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B4BB50173B7798003A6881 /* InfoPlist.strings in Resources */,
+				5F8BB2A41A34BA760076140E /* Graph.png in Resources */,
+				5F8BB2A51A34BA760076140E /* Home.png in Resources */,
+				5F8BB2A71A34BA760076140E /* Stat.png in Resources */,
 				A0B4BB58173B7798003A6881 /* Default.png in Resources */,
 				A0B4BB5A173B7798003A6881 /* Default@2x.png in Resources */,
+				5F8BB2AE1A34BA760076140E /* SHStripeMenuViewController.xib in Resources */,
+				5F8BB2A31A34BA760076140E /* Chat.png in Resources */,
+				5F8BB2AA1A34BA760076140E /* SHMenuCell.xib in Resources */,
 				A0B4BB5C173B7798003A6881 /* Default-568h@2x.png in Resources */,
 				A0B4BB62173B7798003A6881 /* RootViewController.xib in Resources */,
-				A0B4BB7B173B782B003A6881 /* Chat.png in Resources */,
-				A0B4BB7C173B782B003A6881 /* Graph.png in Resources */,
-				A0B4BB7D173B782B003A6881 /* Home.png in Resources */,
-				A0B4BB7E173B782B003A6881 /* Mail-2.png in Resources */,
-				A0B4BB7F173B782B003A6881 /* Stat.png in Resources */,
-				A0B4BB80173B782B003A6881 /* menu_info.plist in Resources */,
-				A0B4BB82173B782B003A6881 /* SHMenuCell.xib in Resources */,
-				A0B4BB86173B782B003A6881 /* SHStripeMenuViewController.xib in Resources */,
+				5F8BB2A61A34BA760076140E /* Mail-2.png in Resources */,
 				A0B7059D1744CB510062C19A /* NewsViewController.xib in Resources */,
 				A0B705A21744CF9F0062C19A /* SocialViewController.xib in Resources */,
+				5F8BB2A81A34BA760076140E /* menu_info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,16 +271,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8BB2AD1A34BA760076140E /* SHStripeMenuViewController.m in Sources */,
+				5F8BB2AB1A34BA760076140E /* SHMenuItem.m in Sources */,
 				A0B4BB52173B7798003A6881 /* main.m in Sources */,
 				A0B4BB56173B7798003A6881 /* AppDelegate.m in Sources */,
 				A0B4BB5F173B7798003A6881 /* RootViewController.m in Sources */,
-				A0B4BB81173B782B003A6881 /* SHLineView.m in Sources */,
-				A0B4BB83173B782B003A6881 /* SHMenuItem.m in Sources */,
-				A0B4BB84173B782B003A6881 /* SHStripeMenuExecuter.m in Sources */,
-				A0B4BB85173B782B003A6881 /* SHStripeMenuViewController.m in Sources */,
-				A0E2D687173BAB67001DD98C /* UIApplication+AppDimensions.m in Sources */,
 				A0B7059C1744CB510062C19A /* NewsViewController.m in Sources */,
+				5F8BB2AC1A34BA760076140E /* SHStripeMenuExecuter.m in Sources */,
 				A0B705A11744CF9F0062C19A /* SocialViewController.m in Sources */,
+				5F8BB2A91A34BA760076140E /* SHLineView.m in Sources */,
+				5F8BB2AF1A34BA760076140E /* UIApplication+AppDimensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
