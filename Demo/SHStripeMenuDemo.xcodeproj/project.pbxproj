@@ -20,6 +20,7 @@
 		5F8BB2BA1A34C5E80076140E /* Mail-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8BB2B41A34C5E80076140E /* Mail-2.png */; };
 		5F8BB2BB1A34C5E80076140E /* Stat.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8BB2B51A34C5E80076140E /* Stat.png */; };
 		5F8BB2BC1A34C5E80076140E /* menu_info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F8BB2B61A34C5E80076140E /* menu_info.plist */; };
+		5F8BB2BE1A34C6D90076140E /* SHStripeMenu.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5F8BB2BD1A34C6D90076140E /* SHStripeMenu.podspec */; };
 		A0B4BB46173B7798003A6881 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B4BB45173B7798003A6881 /* UIKit.framework */; };
 		A0B4BB48173B7798003A6881 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B4BB47173B7798003A6881 /* Foundation.framework */; };
 		A0B4BB4A173B7798003A6881 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B4BB49173B7798003A6881 /* CoreGraphics.framework */; };
@@ -58,6 +59,7 @@
 		5F8BB2B41A34C5E80076140E /* Mail-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mail-2.png"; sourceTree = "<group>"; };
 		5F8BB2B51A34C5E80076140E /* Stat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stat.png; sourceTree = "<group>"; };
 		5F8BB2B61A34C5E80076140E /* menu_info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = menu_info.plist; sourceTree = "<group>"; };
+		5F8BB2BD1A34C6D90076140E /* SHStripeMenu.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SHStripeMenu.podspec; path = ../SHStripeMenu.podspec; sourceTree = "<group>"; };
 		A0B4BB42173B7798003A6881 /* SHStripeMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHStripeMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B4BB45173B7798003A6881 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A0B4BB47173B7798003A6881 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -134,6 +136,7 @@
 		A0B4BB39173B7797003A6881 = {
 			isa = PBXGroup;
 			children = (
+				5F8BB2BD1A34C6D90076140E /* SHStripeMenu.podspec */,
 				A0B4BB4B173B7798003A6881 /* SHStripeMenuDemo */,
 				A0B4BB44173B7798003A6881 /* Frameworks */,
 				A0B4BB43173B7798003A6881 /* Products */,
@@ -253,6 +256,7 @@
 				A0B4BB5A173B7798003A6881 /* Default@2x.png in Resources */,
 				5F8BB2AE1A34BA760076140E /* SHStripeMenuViewController.xib in Resources */,
 				5F8BB2AA1A34BA760076140E /* SHMenuCell.xib in Resources */,
+				5F8BB2BE1A34C6D90076140E /* SHStripeMenu.podspec in Resources */,
 				A0B4BB5C173B7798003A6881 /* Default-568h@2x.png in Resources */,
 				5F8BB2B81A34C5E80076140E /* Graph.png in Resources */,
 				5F8BB2BB1A34C5E80076140E /* Stat.png in Resources */,
