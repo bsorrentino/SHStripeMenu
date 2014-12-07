@@ -16,50 +16,74 @@
 @interface SHStripeMenuExecuter () <UIGestureRecognizerDelegate, SHStripeMenuDelegate>
 
 @property (nonatomic, strong) SHStripeMenuViewController					*stripeMenuViewController;
-@property (nonatomic, strong) UIViewController <SHStripeMenuActionDelegate> *rootViewController;
+@property (nonatomic, strong) UIViewController                              *rootViewController;
 @property (nonatomic, strong) UIView										*lineView;
 @property (nonatomic, assign) BOOL											showingStripeMenu;
+@property (nonatomic, strong) NSArray                                       *menuArray;
 
 @end
 
 @implementation SHStripeMenuExecuter
 
-- (void)setupToParentView:(UIViewController <SHStripeMenuActionDelegate> *)rootViewController
++ (instancetype) createInstance:(UIViewController *)rootViewController filePath:(NSString *)filePath
 {
-	_rootViewController = rootViewController;
-	[self setStripes];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didRotate:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+    SHStripeMenuExecuter *menu = [[SHStripeMenuExecuter alloc] initWithController:rootViewController filePath:filePath];
+    
+    return menu;
+}
+
+- (id)initWithController:(UIViewController *)rootViewController filePath:(NSString *)filePath
+{
+    self = [super init];
+    if (self) {
+        // Custom initialization
+        //NSString	*filePath		= [[NSBundle mainBundle] pathForResource:@"menu_info" ofType:@"plist"];
+        _menuArray		= [[NSArray alloc] initWithContentsOfFile:filePath];
+        _rootViewController = rootViewController;
+        if ([rootViewController conformsToProtocol:@protocol(SHStripeMenuActionDelegate)]) {
+            
+            _delegate = (id<SHStripeMenuActionDelegate>)rootViewController;
+        }
+        [self setStripes];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(didRotate:)
+                                                     name:UIApplicationDidChangeStatusBarOrientationNotification
+                                                   object:nil];
+    }
+    return self;
 }
 
 - (void)setStripes
 {
 	[self createMenuView];
-	[self setStripesView];
+    [self setStripesView];
 }
 
 - (void)setStripesView
 {
-	NSString	*filePath		= [[NSBundle mainBundle] pathForResource:@"menu_info" ofType:@"plist"];
-	NSArray		*menuArray		= [[NSArray alloc] initWithContentsOfFile:filePath];
-	NSInteger	numberOfItems	= [menuArray count];
+	NSInteger	numberOfItems	= [self.menuArray count];
 
 	if (_lineView == nil)
 	{
 		_lineView = [[SHLineView alloc] initWithFrame:CGRectMake(0, ([UIApplication currentSize].height - ROW_HEIGHT * numberOfItems) / 2, STRIPE_WIDTH, ROW_HEIGHT * numberOfItems)];
 		[_rootViewController.view addSubview:_lineView];
 		_lineView.backgroundColor = [UIColor clearColor];
-	}
+
+        UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(stripesTapped:)];
+        [tapRecognizer setDelegate:self];
+        [_lineView addGestureRecognizer:tapRecognizer];
+        
+        UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(stripesSwiped:)];
+        [panRecognizer setDelegate:self];
+        [_lineView addGestureRecognizer:panRecognizer];
+    
+    
+    }
 	else
 		_lineView.frame = CGRectMake(0, ([UIApplication currentSize].height - ROW_HEIGHT * numberOfItems) / 2, STRIPE_WIDTH, ROW_HEIGHT * numberOfItems);
+    
 	[_rootViewController.view bringSubviewToFront:_lineView];
 
-	UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(stripesTapped:)];
-	[tapRecognizer setDelegate:self];
-	[_lineView addGestureRecognizer:tapRecognizer];
-
-	UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(stripesSwiped:)];
-	[panRecognizer setDelegate:self];
-	[_lineView addGestureRecognizer:panRecognizer];
 }
 
 - (void)stripesTapped:(id)sender
@@ -135,14 +159,14 @@
 	// show menu
 	[UIView animateWithDuration :SLIDE_TIMING delay:0 options:UIViewAnimationOptionBeginFromCurrentState
 			animations			:^{
-			_stripeMenuViewController.view.frame = CGRectMake (0, 0, [UIApplication currentSize].width, [UIApplication currentSize].height);
-		}
+                _stripeMenuViewController.view.frame = CGRectMake (0, 0, [UIApplication currentSize].width, [UIApplication currentSize].height);
+            }
 			completion			:^(BOOL finished) {
-			if (finished)
-			{
-				self.showingStripeMenu = TRUE;
-			}
-		}
+                if (finished)
+                {
+                    self.showingStripeMenu = TRUE;
+                }
+            }
 	];
 	// hide stripes
 	[self setStripesView];
@@ -164,17 +188,22 @@
 	[self hideStripeMenu];
 }
 
-- (void)itemSelected:(SHMenuItem *)item
-{
-	[_rootViewController stripeMenuItemSelected:item.name];
-    [self setStripesView];
-}
-
 - (void)didRotate:(NSNotification *)notification
 {
 	if (!self.showingStripeMenu)
 		[self setStripesView];
 	[_stripeMenuViewController setTableView];
 }
+
+#pragma mark - SHStripeMenuActionDelegate.h implementation
+
+- (void)itemSelected:(SHMenuItem *)item
+{
+    if (self.delegate) {
+        [self.delegate stripeMenuItemSelected:item.name];
+    }
+    [self setStripesView];
+}
+
 
 @end
