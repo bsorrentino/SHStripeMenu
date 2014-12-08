@@ -12,6 +12,7 @@
 @interface SHStripeMenuExecuter : NSObject
 
 @property (nonatomic,assign) id <SHStripeMenuActionDelegate> delegate;
+@property (nonatomic, strong) UIView						*lineView;
 
 - (id)initWithController:(UIViewController *)rootViewController filePath:(NSString *)filePath;
 

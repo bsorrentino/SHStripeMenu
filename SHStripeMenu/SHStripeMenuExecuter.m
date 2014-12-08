@@ -17,20 +17,12 @@
 
 @property (nonatomic, strong) SHStripeMenuViewController					*stripeMenuViewController;
 @property (nonatomic, strong) UIViewController                              *rootViewController;
-@property (nonatomic, strong) UIView										*lineView;
 @property (nonatomic, assign) BOOL											showingStripeMenu;
 @property (nonatomic, strong) NSArray                                       *menuArray;
 
 @end
 
 @implementation SHStripeMenuExecuter
-
-+ (instancetype) createInstance:(UIViewController *)rootViewController filePath:(NSString *)filePath
-{
-    SHStripeMenuExecuter *menu = [[SHStripeMenuExecuter alloc] initWithController:rootViewController filePath:filePath];
-    
-    return menu;
-}
 
 - (id)initWithController:(UIViewController *)rootViewController filePath:(NSString *)filePath
 {
