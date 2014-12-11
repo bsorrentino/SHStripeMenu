@@ -31,6 +31,10 @@
         NSString	*filePath	= [[NSBundle mainBundle] pathForResource:@"menu_info" ofType:@"plist"];
 
         _executer = [[SHStripeMenuExecuter alloc ] initWithController:self filePath:filePath];
+        
+        [_executer setCellForMenuBackgroundView:^(UIView *backgroundView) {
+            backgroundView.backgroundColor = UIColor.purpleColor;
+        }];
                      
     }
 }

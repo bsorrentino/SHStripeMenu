@@ -150,10 +150,10 @@
 	[_rootViewController.view bringSubviewToFront:childView];
 	// show menu
 	[UIView animateWithDuration :SLIDE_TIMING delay:0 options:UIViewAnimationOptionBeginFromCurrentState
-			animations			:^{
+            animations          :^{
                 _stripeMenuViewController.view.frame = CGRectMake (0, 0, [UIApplication currentSize].width, [UIApplication currentSize].height);
             }
-			completion			:^(BOOL finished) {
+			completion          :^(BOOL finished) {
                 if (finished)
                 {
                     self.showingStripeMenu = TRUE;
@@ -187,7 +187,7 @@
 	[_stripeMenuViewController setTableView];
 }
 
-#pragma mark - SHStripeMenuActionDelegate.h implementation
+#pragma mark - SHStripeMenuDelegate implementation
 
 - (void)itemSelected:(SHMenuItem *)item
 {
@@ -197,5 +197,16 @@
     [self setStripesView];
 }
 
+- (void)cellForMenuBackgroundView:(UIView *)backgroundView
+{
+    if (self.cellForMenuBackgroundView) {
+        
+        self.cellForMenuBackgroundView(backgroundView);
+
+    } else {
+        [(UITableView *)[self.stripeMenuViewController.view viewWithTag:1] reloadData];
+    }
+    
+}
 
 @end
