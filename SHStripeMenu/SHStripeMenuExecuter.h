@@ -15,9 +15,7 @@
 
 @property (nonatomic, strong) UIView						*lineView;
 
-@property (nonatomic, copy) void (^cellForMenuBackgroundView)(UIView *backgroundView); // INITIALIZE CELL FOR MENU BACKGROUND VIEW
-
-- (id)initWithController:(UIViewController *)rootViewController filePath:(NSString *)filePath;
+- (id)initWithController:(UIViewController *)rootViewController filePath:(NSString *)filePath  cellForMenuBackgroundView:(void (^)(UIView *backgroundView))block ;
 
 
 @end

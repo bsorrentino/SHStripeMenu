@@ -19,12 +19,14 @@
 @property (nonatomic, strong) UIViewController                              *rootViewController;
 @property (nonatomic, assign) BOOL											showingStripeMenu;
 @property (nonatomic, strong) NSArray                                       *menuArray;
+@property (nonatomic, copy) void (^cellForMenuBackgroundView)(UIView *backgroundView); // INITIALIZE CELL FOR MENU BACKGROUND VIEW
+
 
 @end
 
 @implementation SHStripeMenuExecuter
 
-- (id)initWithController:(UIViewController *)rootViewController filePath:(NSString *)filePath
+- (id)initWithController:(UIViewController *)rootViewController filePath:(NSString *)filePath cellForMenuBackgroundView:(void (^)(UIView *backgroundView))block
 {
     self = [super init];
     if (self) {
@@ -36,6 +38,7 @@
             
             _delegate = (id<SHStripeMenuActionDelegate>)rootViewController;
         }
+        self.cellForMenuBackgroundView = block;
         [self setStripes];
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(didRotate:)
@@ -203,10 +206,7 @@
         
         self.cellForMenuBackgroundView(backgroundView);
 
-    } else {
-        [(UITableView *)[self.stripeMenuViewController.view viewWithTag:1] reloadData];
-    }
-    
+    }     
 }
 
 @end
