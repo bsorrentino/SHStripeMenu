@@ -146,11 +146,14 @@
 		cellName.text	= [menuItem name];
 	}
 
-	UIView *myView = [[UIView alloc] init];
-	myView.backgroundColor				= [UIColor colorWithRed:.1 green:.1 blue:.1 alpha:1];
-	_cellForMenu.backgroundView			= myView;
-	_cellForMenu.backgroundView.alpha	= .9;
-
+    if( !_cellForMenu.backgroundView ) {
+        UIView *myView = [[UIView alloc] init];
+        //myView.backgroundColor				= [UIColor colorWithRed:.1 green:.1 blue:.1 alpha:1];
+        _cellForMenu.backgroundView			= myView;
+        _cellForMenu.backgroundView.alpha	= .9;
+    }
+    [self.delegate cellForMenuBackgroundView:_cellForMenu];
+    
 	CGRect frame = _cellForMenu.frame;
 	frame.size.width	= MENU_WIDTH;
 	_cellForMenu.frame	= frame;

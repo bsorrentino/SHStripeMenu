@@ -27,9 +27,17 @@
 	// Do any additional setup after loading the view, typically from a nib.
 
 	// SHStripeMenu code
-	if (_executer == nil)
-		_executer = [[SHStripeMenuExecuter alloc] init];
-	[_executer setupToParentView:self];
+    if (_executer == nil) {
+        NSString	*filePath	= [[NSBundle mainBundle] pathForResource:@"menu_info" ofType:@"plist"];
+
+        _executer = [[SHStripeMenuExecuter alloc ] initWithController:self
+                                                             filePath:filePath
+                            cellForMenuBackgroundView                :^(UIView *backgroundView) {
+                                
+                                    backgroundView.backgroundColor = UIColor.purpleColor;
+        }];
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning

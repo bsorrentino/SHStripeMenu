@@ -18,6 +18,7 @@
 @required
 - (void)itemSelected:(SHMenuItem *)item;
 - (void)hideMenu;
+- (void)cellForMenuBackgroundView:(UIView *)backgroundView;
 
 @end
 

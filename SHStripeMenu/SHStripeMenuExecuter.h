@@ -11,6 +11,11 @@
 
 @interface SHStripeMenuExecuter : NSObject
 
-- (void)setupToParentView:(UIViewController<SHStripeMenuActionDelegate> *)rootViewController;
+@property (nonatomic,assign) id <SHStripeMenuActionDelegate> delegate;
+
+@property (nonatomic, strong) UIView						*lineView;
+
+- (id)initWithController:(UIViewController *)rootViewController filePath:(NSString *)filePath  cellForMenuBackgroundView:(void (^)(UIView *backgroundView))block ;
+
 
 @end
