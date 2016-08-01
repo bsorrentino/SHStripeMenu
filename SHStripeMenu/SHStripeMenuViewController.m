@@ -234,6 +234,9 @@
 	[_delegate hideMenu];
 	// send the selected menu item
 	[_delegate itemSelected:[_items objectAtIndex:indexPath.row]];
+    // deselect item
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
 }
 
 @end

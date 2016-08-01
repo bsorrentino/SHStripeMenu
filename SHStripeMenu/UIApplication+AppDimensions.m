@@ -20,7 +20,7 @@
 	CGSize			size			= [UIScreen mainScreen].bounds.size;
 	UIApplication	*application	= [UIApplication sharedApplication];
 
-	if (UIDeviceOrientationIsLandscape(orientation))
+	if (UIInterfaceOrientationIsLandscape(orientation))
 		size = CGSizeMake(size.height, size.width);
 
 	if (application.statusBarHidden == NO)
