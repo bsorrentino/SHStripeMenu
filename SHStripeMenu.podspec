@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SHStripeMenu"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "A leftside menu "
 
   s.description  = <<-DESC
@@ -74,7 +74,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/bsorrentino/SHStripeMenu.git", :tag => 'v0.0.3' }
+  s.source       = { :git => "https://github.com/bsorrentino/SHStripeMenu.git", :tag => 'v0.0.4' }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
