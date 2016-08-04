@@ -101,7 +101,8 @@
 {
 	if (_stripeMenuViewController == nil)
 	{
-		self.stripeMenuViewController			= [[SHStripeMenuViewController alloc] initWithNibName:@"SHStripeMenuViewController" bundle:nil];
+        NSBundle *bundle = [NSBundle bundleForClass:[SHStripeMenuViewController class]];
+        self.stripeMenuViewController			= [[SHStripeMenuViewController alloc] initWithNibName:@"SHStripeMenuViewController" bundle:bundle];
 		self.stripeMenuViewController.delegate	= self;
 		[_rootViewController.view addSubview:self.stripeMenuViewController.view];
 		[_stripeMenuViewController didMoveToParentViewController:_rootViewController];
