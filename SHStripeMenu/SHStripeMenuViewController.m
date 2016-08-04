@@ -133,8 +133,10 @@
 
 	_cellForMenu = [self.menuTableView dequeueReusableCellWithIdentifier:menuCellID];
 
-	if (_cellForMenu == nil)
-		[[NSBundle mainBundle] loadNibNamed:@"SHMenuCell" owner:self options:nil];
+    if (_cellForMenu == nil) {
+        NSBundle *bundle = [NSBundle bundleForClass:[self class]];        
+        [bundle loadNibNamed:@"SHMenuCell" owner:self options:nil];
+    }
 
 	UIImageView *cellImage	= (UIImageView *)[_cellForMenu viewWithTag:1];
 	UILabel		*cellName	= (UILabel *)[_cellForMenu viewWithTag:2];
